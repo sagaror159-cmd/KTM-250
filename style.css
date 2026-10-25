@@ -1,0 +1,172 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 16px;
+  background: #101114;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  text-align: center;
+  padding: 24px 10px;
+  border-bottom: 1px solid #333;
+}
+
+h1 {
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+h1 span,
+h2 {
+  color: #ff7100;
+}
+
+header p {
+  color: #aaa;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+
+.dashboard,
+.gallery-section {
+  max-width: 650px;
+  margin: 20px auto;
+  padding: 22px;
+  border: 1px solid #383838;
+  border-radius: 18px;
+  background: linear-gradient(145deg, #22242a, #151619);
+}
+
+.dashboard {
+  text-align: center;
+}
+
+.bike {
+  font-size: 100px;
+  padding: 15px;
+  filter: drop-shadow(0 0 18px #ff710055);
+}
+
+h2 {
+  letter-spacing: 1px;
+}
+
+.note {
+  color: #aaa;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin: 22px 0;
+}
+
+.stat {
+  padding: 12px 5px;
+  background: #101114;
+  border: 1px solid #414141;
+  border-radius: 12px;
+  overflow-wrap: anywhere;
+}
+
+.stat p {
+  color: #aaa;
+  font-size: 10px;
+}
+
+.stat strong {
+  display: block;
+  font-size: 23px;
+  color: #ff7100;
+}
+
+.stat small {
+  color: #aaa;
+}
+
+button {
+  padding: 12px 16px;
+  border: 0;
+  border-radius: 9px;
+  background: #ff7100;
+  color: #111;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#demoButton {
+  width: 100%;
+}
+
+.filters {
+  display: flex;
+  gap: 8px;
+  margin: 18px 0;
+}
+
+.filter {
+  flex: 1;
+  background: #303239;
+  color: white;
+}
+
+.filter.active {
+  background: #ff7100;
+  color: #111;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.photo {
+  margin: 0;
+  padding: 7px;
+  border-radius: 12px;
+  background: #101114;
+  overflow: hidden;
+}
+
+.photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 8px;
+  background: #303239;
+}
+
+.photo figcaption {
+  padding: 10px 3px;
+  color: #ff7100;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.photo[hidden] {
+  display: none;
+}
+
+footer {
+  padding: 24px 5px;
+  text-align: center;
+  color: #aaa;
+  font-size: 12px;
+}
+
+@media (min-width: 600px) {
+  .gallery {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
