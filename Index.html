@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My KTM Duke 250 Garage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>KTM <span>DUKE 250</span></h1>
+    <p>MY RIDE • MY STORY</p>
+  </header>
+
+  <main>
+    <section class="dashboard">
+      <div class="bike">🏍️</div>
+      <h2>SMART DASHBOARD</h2>
+      <p class="note">Demo only — not connected to your bike.</p>
+
+      <div class="stats">
+        <div class="stat">
+          <p>SPEED</p>
+          <strong id="speed">0</strong>
+          <small>km/h</small>
+        </div>
+        <div class="stat">
+          <p>ENGINE RPM</p>
+          <strong id="rpm">1200</strong>
+        </div>
+        <div class="stat">
+          <p>GEAR</p>
+          <strong id="gear">N</strong>
+        </div>
+      </div>
+
+      <button id="demoButton">START DEMO</button>
+      <p id="demoNote" class="note">Simulated values only.</p>
+    </section>
+
+    <section class="gallery-section">
+      <h2>MY PHOTO GALLERY</h2>
+      <p class="note">My bike. My photos. My journey.</p>
+
+      <div class="filters">
+        <button class="filter active" data-filter="all">ALL</button>
+        <button class="filter" data-filter="bike">BIKE</button>
+        <button class="filter" data-filter="solo">SOLO</button>
+      </div>
+
+      <div class="gallery">
+        <figure class="photo" data-category="bike">
+          <img src="images/bike-1.jpg" alt="My bike photo">
+          <figcaption>MY RIDE</figcaption>
+        </figure>
+        <figure class="photo" data-category="bike">
+          <img src="images/bike-2.jpg" alt="My second bike photo">
+          <figcaption>DUKE LIFE</figcaption>
+        </figure>
+        <figure class="photo" data-category="solo">
+          <img src="images/solo-1.jpg" alt="My portrait">
+          <figcaption>RIDER</figcaption>
+        </figure>
+        <figure class="photo" data-category="solo">
+          <img src="images/solo-2.jpg" alt="My second portrait">
+          <figcaption>MY STORY</figcaption>
+        </figure>
+      </div>
+      <p class="note">Photos are public when this website is published.</p>
+    </section>
+  </main>
+
+  <footer>BUILT WITH PASSION 🧡</footer>
+  <script src="script.js"></script>
+</body>
+</html>
